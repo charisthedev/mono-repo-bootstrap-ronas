@@ -1,0 +1,8 @@
+{
+  "name": "test-app-mobile",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/test-app-mobile",
+  "projectType": "application",
+  "tags": ["app:test-app-mobile", "type:app"],
+  "targets": {}
+}
