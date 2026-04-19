@@ -1,0 +1,48 @@
+# Whitelist — ignore everything except what's needed for the mobile EAS build
+
+# Ignore everything
+*
+.*
+
+# Mobile apps
+!apps
+apps/*
+
+# Shared libraries
+!libs
+libs/*
+!libs/shared
+!libs/shared/**
+
+# i18n translations
+!i18n
+i18n/*
+!i18n/shared
+!i18n/shared/**
+
+# Dependency patches for React Native packages
+!patches
+!patches/**
+
+# Root config files required for the build
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.base.json
+!babel.config.json
+!jest.config.ts
+!jest.preset.js
+!types.d.ts
+
+# Mobile app: test-app-mobile
+!apps/test-app-mobile
+!apps/test-app-mobile/**
+apps/test-app-mobile/.expo
+
+# Libraries: test-app-mobile
+!libs/test-app-mobile
+!libs/test-app-mobile/**
+
+# i18n: test-app-mobile
+!i18n/test-app-mobile
+!i18n/test-app-mobile/**
